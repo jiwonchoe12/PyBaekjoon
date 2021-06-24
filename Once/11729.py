@@ -1,13 +1,13 @@
 n = int(input())
 cnt = 0
 li = []
-def hanoi(n, fro, tmp, to):
+def hanoi(n, fro, to, tmp):
     global cnt
     if n == 1:
         li.append((fro,to))
         cnt += 1
     else:
-        hanoi(n-1,fro, to, tmp)
+        hanoi(n-1,fro, tmp, to)
         li.append((fro,to))
         cnt += 1
         hanoi(n-1, tmp, fro, to)
