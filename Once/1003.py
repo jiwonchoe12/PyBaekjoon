@@ -1,4 +1,3 @@
-d = {}
 def fibo(n):
     if n == 0:
         d[0] = [0,1,0]
@@ -13,6 +12,7 @@ def fibo(n):
         return d[n][0]
 T = int(input())
 fibo(40)
+d = {}
 for i in range(T):
     X = int(input())
     print(d[X][1],d[X][2])
