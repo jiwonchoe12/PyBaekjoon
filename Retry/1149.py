@@ -27,4 +27,6 @@ for a in range(3):
     for i in range(len(r_li)):
         s+= cost[i][r_li[i]]
     ans.append(s)
+
+    
 print(min(ans))
