@@ -2,6 +2,7 @@ import sys
 N, K = map(int,input().split())
 li = [[0,0]]
 cost = [[0 for i in range(K+2)] for i in range(N+2)] 
+
 for i in range(N):
     li.append(list(map(int, sys.stdin.readline().split())))
 
